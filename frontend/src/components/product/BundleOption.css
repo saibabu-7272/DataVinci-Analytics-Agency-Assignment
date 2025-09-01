@@ -1,0 +1,143 @@
+.bundle-option {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.bundle-option__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.bundle-option__header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.bundle-option__toggle {
+  cursor: pointer;
+}
+
+.bundle-option__content {
+  padding: 1rem;
+}
+
+.bundle-option__products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.bundle-option__product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80px;
+}
+
+.bundle-option__product-image {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bundle-option__product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.bundle-option__product-name {
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.bundle-option__product-size {
+  font-size: 0.7rem;
+  color: #666;
+  margin-bottom: 0.2rem;
+}
+
+.bundle-option__product-price {
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.bundle-option__plus {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.bundle-option__summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.bundle-option__original-price {
+  text-decoration: line-through;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.bundle-option__price {
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bundle-option__save {
+  background-color: #7b2c7d;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.bundle-option__add-button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #7b2c7d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-transform: uppercase;
+}
+
+.bundle-option__add-button:hover {
+  background-color: #6b2169;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .bundle-option__products {
+    flex-wrap: nowrap;
+  }
+  
+  .bundle-option__product {
+    width: 100px;
+  }
+}

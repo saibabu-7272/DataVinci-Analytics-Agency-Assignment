@@ -1,0 +1,92 @@
+.product-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.product-page__content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.product-page__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.product-page__delivery {
+  margin-bottom: 2rem;
+}
+
+.product-page__delivery h3,
+.product-page__afterpay h3 {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #666;
+}
+
+.product-page__delivery-info {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 1rem;
+}
+
+.product-page__delivery-info p {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+}
+
+.product-page__delivery-date {
+  margin-top: 1rem;
+}
+
+.product-page__delivery-date h4 {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #666;
+}
+
+.product-page__delivery-date p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.product-page__afterpay {
+  margin-bottom: 2rem;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 1rem;
+}
+
+.product-page__afterpay p {
+  margin: 0;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.afterpay-logo {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .product-page__content {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .product-page__left {
+    flex: 1;
+  }
+  
+  .product-page__right {
+    flex: 1;
+    padding: 2rem 1rem;
+  }
+}

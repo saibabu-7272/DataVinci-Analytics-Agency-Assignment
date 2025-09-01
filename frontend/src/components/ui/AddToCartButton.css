@@ -1,0 +1,24 @@
+.add-to-cart-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-transform: uppercase;
+}
+
+.add-to-cart-button:hover {
+  background-color: #000;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .add-to-cart-button {
+    padding: 1.2rem;
+  }
+}

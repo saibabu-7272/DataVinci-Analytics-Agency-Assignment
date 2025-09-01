@@ -1,0 +1,133 @@
+.payment-options {
+  margin-bottom: 2rem;
+}
+
+.payment-options__header {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #666;
+}
+
+.payment-options__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.payment-option {
+  background: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.payment-option.active {
+  border: 2px solid #7b2c7d;
+  background-color: rgba(123, 44, 125, 0.05);
+}
+
+.payment-option__content {
+  flex: 1;
+}
+
+.payment-option__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-option__header h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.payment-option__price {
+  font-weight: 500;
+}
+
+.payment-option__info {
+  margin-top: 0.5rem;
+}
+
+.payment-option__info-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.8rem;
+  color: #666;
+  cursor: pointer;
+}
+
+.placeholder-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+/* Modal for subscription info */
+.subscription-info-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.subscription-info-modal__content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.subscription-info-modal__close-button {
+  display: block;
+  margin: 1.5rem auto 0;
+  padding: 0.5rem 1rem;
+  background-color: #7b2c7d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .payment-options__container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .payment-option {
+    flex: 1;
+  }
+  
+  .subscription-info-modal__content {
+    max-width: 500px;
+  }
+}

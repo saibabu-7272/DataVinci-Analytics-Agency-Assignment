@@ -1,0 +1,123 @@
+.product-display {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.product-display__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #7b2c7d, #8f3594);
+  z-index: -1;
+  border-radius: 16px;
+}
+
+.product-display__main-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  width: 100%;
+  /* max-height: 400px; */
+}
+
+.product-display__main-image img {
+  width: 90%;
+  /* max-height: 400px; */
+  object-fit: contain;
+}
+
+.banner-image{
+  /* height:500px; */
+}
+
+.product-display__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.product-display__nav--prev {
+  left: 10px;
+}
+
+.product-display__nav--next {
+  right: 10px;
+}
+
+.product-display__thumbnails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.product-display__thumbnail {
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  height: 120px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-display__thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.product-display__thumbnail.active {
+  opacity: 1;
+  border: 2px solid #fff;
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border: 1px dashed #ccc;
+  padding: 0.5rem;
+  font-size: 12px;
+  text-align: center;
+  color: #666;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .product-display {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  .product-display__main-image {
+    width: 60%;
+    height: 400px;
+  }
+
+  .product-display__thumbnails {
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}

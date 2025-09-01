@@ -1,0 +1,46 @@
+.taste-profile {
+  margin: 2rem 0;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.taste-profile__header {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #666;
+}
+
+.taste-profile__slider-container {
+  padding: 1rem 0;
+}
+
+.taste-profile__labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.taste-profile__slider {
+  height: 10px;
+  background: linear-gradient(to right, #f0d78c, #c27a3e);
+  border-radius: 5px;
+  position: relative;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.taste-profile__slider-thumb {
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, #7b2c7d, #8f3594);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  z-index: 2;
+}
